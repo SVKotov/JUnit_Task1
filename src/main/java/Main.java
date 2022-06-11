@@ -5,8 +5,8 @@ public class Main {
 
         Calculator calc = Calculator.instance.get();
 
-        int a = calc.plus.apply(1, 14);
-        int b = calc.minus.apply(8, 1);
+        int a = calc.plus.apply(7, 13);
+        int b = calc.minus.apply(1, 1);
 
         int c = calc.devide.apply(a, b);
         // a = 3, b = 0 -- Ошибка деления на 0.

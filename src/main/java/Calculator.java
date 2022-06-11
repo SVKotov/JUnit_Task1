@@ -9,8 +9,10 @@ public class Calculator {
     BinaryOperator<Integer> minus = (x, y) -> x - y;
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
     BinaryOperator<Integer> devide = (x, y) -> {
-        if (x == 0 || y == 0) return 0;
-        return x / y;
+        if (y == 0) {
+            throw new ArithmeticException("Нельзя делить на 0.");
+        }
+        return (x / y) ;
     };
 
     //UnaryOperator для произведения математических операций над одним числом

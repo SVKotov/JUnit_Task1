@@ -8,7 +8,7 @@ public class CalculatorTest {
 
     @Test(expected = ArithmeticException.class)
     public void testDivideByZeroShouldThrowArithmeticException() {
-        calculator.plus.apply(980, 0);
+        calculator.devide.apply(980, 0);
     }
 
 
